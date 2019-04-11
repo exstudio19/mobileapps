@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Button, View, Text } from "react-native";
+import AppHeader from '../components/AppHeader';
+import { Container, Content, Button, Left, Right, Text, Body, Title, Icon, Header } from "native-base";
 
 export default class HomeScreen extends Component {
     static navigationOptions = {
@@ -7,9 +8,12 @@ export default class HomeScreen extends Component {
       };
   render() {
     return (
-      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-        <Text>Home Screen</Text>
-      </View>
+      <Container>
+        <AppHeader pageTitle="Home" navigation={ this.props.navigation } />
+        <Content>
+          <Text>Welcome Home</Text>
+        </Content>
+      </Container>
     )
   }
 }
