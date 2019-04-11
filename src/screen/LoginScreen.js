@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Content, Header, Left, Right, Body, Title, Button, Text, Form, Item, Input} from 'native-base';
+import { Container, Content, Button, Text, Form, Item, Input} from 'native-base';
 
 export default class LoginScreen extends Component {
     static navigationOptions = {
@@ -9,13 +9,6 @@ export default class LoginScreen extends Component {
     render() {
         return(
             <Container>
-                <Header>
-                    <Left />
-                    <Body>
-                        <Title>Login</Title>
-                    </Body>
-                    <Right />
-                </Header>
                 <Content>
                     <Form>
                         <Item>

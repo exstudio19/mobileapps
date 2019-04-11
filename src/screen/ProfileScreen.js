@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import AppHeader from '../components/AppHeader';
-import { Container, Content, Button, Left, Right, Text, Body, Title, Icon, Header } from "native-base";
+import { Button, View, Text } from "react-native";
 
 
 export default class ProfileScreen extends Component {
@@ -9,13 +8,9 @@ export default class ProfileScreen extends Component {
       };
   render() {
     return (
-      
-      <Container>
-        <AppHeader pageTitle="Profile" navigation={this.props.navigation} />
-        <Content>
-          <Text>Profile Page</Text>
-        </Content>
-      </Container>
+      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+        <Text>Profile Screen</Text>
+      </View>
     )
   }
 }
